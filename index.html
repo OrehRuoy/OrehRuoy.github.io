@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="OrehRuoy — indie Android & iOS developer. Circuit Sort, What's 4 Dinner, Fork It, SensorFit, Spectrum Sync, and StimPad.">
+  <title>OrehRuoy — Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" id="top">
+    <nav class="nav glass" aria-label="Main">
+      <a class="nav-logo" href="#top">OrehRuoy</a>
+      <div class="nav-links">
+        <a href="#apps">Apps</a>
+        <a href="https://www.youtube.com/@hallanhype1" target="_blank" rel="noopener noreferrer">YouTube</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Indie Android &amp; iOS Developer</p>
+          <h1 id="hero-title">OrehRuoy</h1>
+          <p class="hero-whisper" aria-hidden="true">YourHero</p>
+          <p class="hero-lead">
+            Games, food, fitness, and sensory tools — built for real people who want less friction and more joy in everyday moments.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#apps">Explore apps</a>
+            <a class="btn btn-ghost" href="https://www.youtube.com/@hallanhype1" target="_blank" rel="noopener noreferrer">YouTube</a>
+            <a class="btn btn-ghost" href="mailto:hallanhype@gmail.com">hallanhype@gmail.com</a>
+          </div>
+        </div>
+        <figure class="hero-photo glass">
+          <img src="assets/developer/orehruoy-mirror.jpg" alt="OrehRuoy written on a framed mirror on a wood desk with a recipe book, fork, circuit board, and fitness figurine">
+          <figcaption class="mirror-caption">The maker's mirror</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="apps-intro" id="apps" aria-labelledby="apps-title">
+      <div class="section-head">
+        <h2 id="apps-title">Apps</h2>
+        <p>Six projects. Six problems solved. Tap a card to jump in.</p>
+      </div>
+
+      <div class="filter-bar" role="tablist" aria-label="Filter apps by category">
+        <button class="filter-chip is-active" type="button" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="filter-chip" type="button" data-filter="games" role="tab" aria-selected="false">Games</button>
+        <button class="filter-chip" type="button" data-filter="food" role="tab" aria-selected="false">Food</button>
+        <button class="filter-chip" type="button" data-filter="fitness" role="tab" aria-selected="false">Fitness</button>
+        <button class="filter-chip" type="button" data-filter="sensory" role="tab" aria-selected="false">Sensory</button>
+      </div>
+
+      <div class="app-grid">
+        <a class="app-card magnetic" href="#circuit-sort" data-category="games" data-accent="circuit">
+          <img class="app-card-icon" src="assets/apps/circuit-sort/icon/icon.png" alt="" width="72" height="72">
+          <div>
+            <h3>Circuit Sort</h3>
+            <p>Sort screws. Fix circuits.</p>
+            <div class="platform-badges">
+              <span class="pill">Android</span>
+              <span class="pill">iOS</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="app-card magnetic" href="#whats4dinner" data-category="food" data-accent="dinner">
+          <img class="app-card-icon" src="assets/apps/whats4dinner/icon/icon.png" alt="" width="72" height="72">
+          <div>
+            <h3>What's 4 Dinner</h3>
+            <p>Spin it. Cook it. Love it.</p>
+            <div class="platform-badges">
+              <span class="pill">Android</span>
+              <span class="pill">iOS</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="app-card magnetic" href="#fork-it" data-category="food" data-accent="fork">
+          <img class="app-card-icon" src="assets/apps/fork-it/icon/icon.png" alt="" width="72" height="72">
+          <div>
+            <h3>Fork It</h3>
+            <p>Can't decide? Say Fork It.</p>
+            <div class="platform-badges">
+              <span class="pill">Android</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="app-card magnetic" href="#sensorfit" data-category="fitness" data-accent="sensor">
+          <img class="app-card-icon" src="assets/apps/sensorfit/icon/icon.png" alt="" width="72" height="72">
+          <div>
+            <h3>SensorFit</h3>
+            <p>Hands-free. Auto-counted.</p>
+            <div class="platform-badges">
+              <span class="pill">Android</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="app-card magnetic" href="#spectrum-sync" data-category="sensory" data-accent="spectrum">
+          <img class="app-card-icon" src="assets/apps/spectrum-sync/icon/icon.png" alt="" width="72" height="72">
+          <div>
+            <h3>Spectrum Sync</h3>
+            <p>Your social language coach.</p>
+            <div class="platform-badges">
+              <span class="pill">Android overlay</span>
+              <span class="pill pill-soon">iOS keyboard soon</span>
+            </div>
+          </div>
+        </a>
+
+        <a class="app-card magnetic" href="#stimpad" data-category="sensory" data-accent="stim">
+          <img class="app-card-icon" src="assets/apps/stimpad/icon/icon.png" alt="" width="72" height="72">
+          <div>
+            <h3>StimPad</h3>
+            <p>Feel every sound.</p>
+            <div class="platform-badges">
+              <span class="pill pill-soon">Coming soon</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Circuit Sort -->
+    <article class="showcase" id="circuit-sort" data-accent="circuit">
+      <div class="showcase-inner">
+        <header class="showcase-header">
+          <img class="showcase-icon" src="assets/apps/circuit-sort/icon/icon.png" alt="Circuit Sort icon" width="96" height="96">
+          <div>
+            <span class="showcase-category">Games</span>
+            <h2>Circuit Sort</h2>
+            <p class="showcase-tagline">Sort screws. Fix circuits.</p>
+          </div>
+        </header>
+        <p class="showcase-desc">
+          A satisfying screw-sorting puzzle about matching colored screws into bins to repair old electronics.
+          175+ levels, daily challenges, power tools, and a workbench that grows as you progress.
+        </p>
+        <div class="store-row">
+          <a class="store-badge apple" href="https://apps.apple.com/app/id6789962999" target="_blank" rel="noopener noreferrer">
+            <img src="assets/badges/app-store.svg" alt="Download on the App Store">
+          </a>
+          <a class="store-badge play" href="https://play.google.com/store/apps/details?id=com.circuitsort.screwpuzzle" target="_blank" rel="noopener noreferrer">
+            <img src="assets/badges/google-play.png" alt="Get it on Google Play">
+          </a>
+        </div>
+        <div class="video-row">
+          <button class="video-card is-wide" type="button" data-yt="aS8xreqm2PY" data-title="Circuit Sort - Official Preview">
+            <img src="https://i.ytimg.com/vi/aS8xreqm2PY/hqdefault.jpg" alt="Circuit Sort official preview thumbnail">
+            <span class="play-icon" aria-hidden="true"></span>
+            <span class="video-label">Official Preview</span>
+          </button>
+          <button class="video-card is-short" type="button" data-yt="F03OZ-hqzqE" data-title="I was ONE slot away — Circuit Sort daily">
+            <img src="https://i.ytimg.com/vi/F03OZ-hqzqE/hqdefault.jpg" alt="Circuit Sort daily short thumbnail">
+            <span class="play-icon" aria-hidden="true"></span>
+            <span class="video-label">One slot away</span>
+          </button>
+          <button class="video-card is-short" type="button" data-yt="JmL5_HY1hA4" data-title="POV: Just unscrew it — Circuit Sort">
+            <img src="https://i.ytimg.com/vi/JmL5_HY1hA4/hqdefault.jpg" alt="Circuit Sort POV short thumbnail">
+            <span class="play-icon" aria-hidden="true"></span>
+            <span class="video-label">Just unscrew it</span>
+          </button>
+        </div>
+        <div class="carousel" data-carousel>
+          <button class="carousel-btn prev" type="button" aria-label="Previous screenshot">&#8592;</button>
+          <div class="carousel-track" tabindex="0">
+            <button class="shot" type="button" data-lightbox="assets/apps/circuit-sort/screenshots/01-unscrew-the-chaos.png" data-caption="Unscrew the chaos">
+              <img src="assets/apps/circuit-sort/screenshots/01-unscrew-the-chaos.png" alt="Circuit Sort — unscrew the chaos" loading="lazy">
+            </button>
+            <button class="shot" type="button" data-lightbox="assets/apps/circuit-sort/screenshots/02-repair-retro-gear.png" data-caption="Repair retro gear">
+              <img src="assets/apps/circuit-sort/screenshots/02-repair-retro-gear.png" alt="Circuit Sort — repair retro gear" loading="lazy">
+            </button>
+            <button class="shot" type="button" data-lightbox="assets/apps/circuit-sort/screenshots/03-one-slot-left.png" data-caption="One slot left">
+              <img src="assets/apps/circuit-sort/screenshots/03-one-slot-left.png" alt="Circuit Sort — one slot left" loading="lazy">
+            </button>
+            <button class="shot" type="button" data-lightbox="assets/apps/circuit-sort/screenshots/04-beat-todays-time.png" data-caption="Beat today's time">
+              <img src="assets/apps/circuit-sort/screenshots/04-beat-todays-time.png" alt="Circuit Sort — beat today's time" loading="lazy">
+            </button>
+            <button class="shot" type="button" data-lightbox="assets/apps/circuit-sort/screenshots/05-build-your-bench.png" data-caption="Build your bench">
+              <img src="assets/apps/circuit-sort/screenshots/05-build-your-bench.png" alt="Circuit Sort — build your bench" loading="lazy">
+            </button>
+            <button class="shot" type="button" data-lightbox="assets/apps/circuit-sort/screenshots/06-make-it-yours.png" data-caption="Make it yours">
+              <img src="assets/apps/circuit-sort/screenshots/06-make-it-yours.png" alt="Circuit Sort — make it yours" loading="lazy">
+            </button>
+          </div>
+          <button class="carousel-btn next" type="button" aria-label="Next screenshot">&#8594;</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- What's 4 Dinner -->
+    <article class="showcase" id="whats4dinner" data-accent="dinner">
+      <div class="showcase-inner">
+        <header class="showcase-header">
+          <img class="showcase-icon" src="assets/apps/whats4dinner/icon/icon.png" alt="What's 4 Dinner icon" width="96" height="96">
+          <div>
+            <span class="showcase-category">Food</span>
+            <h2>What's 4 Dinner</h2>
+            <p class="showcase-tagline">Spin it. Cook it. Love it.</p>
+          </div>
+        </header>
+        <p class="showcase-desc">
+          Stuck on dinner? Spin filters for food type, diet, cook time, and allergies — then get a full recipe with ingredients and steps.
+          Save favorites, track your Culinary Passport streaks, and go Premium for unlimited searches and a weekly meal planner.
+        </p>
+        <div class="store-row">
+          <a class="store-badge apple" href="https://apps.apple.com/us/app/whats-4-dinner-spin-cook/id6794008104" target="_blank" rel="noopener noreferrer">
+            <img src="assets/badges/app-store.svg" alt="Download on the App Store">
+          </a>
+          <a class="store-badge play" href="https://play.google.com/store/apps/details?id=com.whats4dinner.whats4dinner" target="_blank" rel="noopener noreferrer">
+            <img src="assets/badges/google-play.png" alt="Get it on Google Play">
+          </a>
+        </div>
+        <div class="video-row">
+          <button class="video-card is-short" type="button" data-yt="3UXU7MeRXds" data-title="Still Staring at an Empty Plate? Spin Dinner">
+            <img src="https://i.ytimg.com/vi/3UXU7MeRXds/hqdefault.jpg" alt="What's 4 Dinner spin dinner short">
+            <span class="play-icon" aria-hidden="true"></span>
+            <span class="video-label">Spin dinner</span>
+          </button>
+          <button class="video-card is-short" type="button" data-yt="QACWG6npM5w" data-title="Can't decide what's for dinner? Just spin">
+            <img src="https://i.ytimg.com/vi/QACWG6npM5w/hqdefault.jpg" alt="What's 4 Dinner just spin short">
+            <span class="play-icon" aria-hidden="true"></span>
+            <span class="video-label">Just spin</span>
+          </button>
+          <button class="video-card is-short" type="button" data-yt="HWgwQl7jD_E" data-title="It's as easy as What's 4 Dinner!">
+            <img src="https://i.ytimg.com/vi/HWgwQl7jD_E/hqdefault.jpg" alt="What's 4 Dinner easy short">
+            <span class="play-icon" aria-hidden="true"></span>
+            <span class="video-label">As easy as dinner</span>
+          </button>
+        </div>
+        <div class="carousel" data-carousel>
+          <button class="carousel-btn prev" type="button" aria-label="Previous screenshot">&#8592;</button>
+          <div class="carousel-track" tabindex="0">
+            <button class="shot" type="button" data-lightbox="assets/apps/whats4dinner/screenshots/iphone65_01_01_main.png" data-caption="Spin for dinner">
+              <img src="assets/apps/whats4dinner/screenshots/iphone65_01_01_main.png" alt="What's 4 Dinner — spin for dinner" loading="lazy">
+            </button>
+            <button class="shot" type="button" data-lightbox="assets/apps/whats4dinner/screenshots/iphone65_02_02_passport.png" data-caption="Culinary Passport">
+              <img src="assets/apps/whats4dinner/screenshots/iphone65_02_02_passport.png" alt="What's 4 Dinner — Culinary Passport" loading="lazy">
+            </button>
+            <button class="shot" type="button" data-lightbox="assets/apps/whats4dinner/screenshots/iphone65_03_03_cookbook.png" data-caption="Cookbook album">
+              <img src="assets/apps/whats4dinner/screenshots/iphone65_03_03_cookbook.png" alt="What's 4 Dinner — cookbook album" loading="lazy">
+            </button>
+            <button class="shot" type="button" data-lightbox="assets/apps/whats4dinner/screenshots/iphone65_04_04_recipe.png" data-caption="Step-by-step recipes">
+              <img src="assets/apps/whats4dinner/screenshots/iphone65_04_04_recipe.png" alt="What's 4 Dinner — step-by-step recipes" loading="lazy">
+            </button>
+          </div>
+          <button class="carousel-btn next" type="button" aria-label="Next screenshot">&#8594;</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- Fork It -->
+    <article class="showcase" id="fork-it" data-accent="fork">
+      <div class="showcase-inner">
+        <header class="showcase-header">
+          <img class="showcase-icon" src="assets/apps/fork-it/icon/icon.png" alt="Fork It icon" width="96" height="96">
+          <div>
+            <span class="showcase-category">Food</span>
+            <h2>Fork It</h2>
+            <p class="showcase-tagline">Can't decide? Say Fork It.</p>
+          </div>
+        </header>
+        <p class="showcase-desc">
+          A fast random restaurant picker for nights when nobody wants to choose. Pick a vibe, tap Fork It,
+          and get a nearby spot with ratings, directions, or delivery — then spin again if it's not the one.
+        </p>
+        <div class="store-row">
+          <a class="store-badge play" href="https://play.google.com/store/apps/details?id=com.forkit.randomrestaurant" target="_blank" rel="noopener noreferrer">
+            <img src="assets/badges/google-play.png" alt="Get it on Google Play">
+          </a>
+        </div>
+        <div class="video-row">
+          <button class="video-card is-short" type="button" data-yt="l8Au3uZdWv0" data-title="Don't think about dinner. Just Fork It.">
+            <img src="https://i.ytimg.com/vi/l8Au3uZdWv0/hqdefault.jpg" alt="Fork It short thumbnail">
+            <span class="play-icon" aria-hidden="true"></span>
+            <span class="video-label">Just Fork It</span>
+          </button>
+        </div>
+        <div class="carousel" data-carousel>
+          <button class="carousel-btn prev" type="button" aria-label="Previous screenshot">&#8592;</button>
+          <div class="carousel-track" tabindex="0">
+            <button class="shot" type="button" data-lightbox="assets/apps/fork-it/screenshots/01-main-menu.png" data-caption="Pick a vibe">
+              <img src="assets/apps/fork-it/screenshots/01-main-menu.png" alt="Fork It — pick a vibe" loading="lazy">
+            </button>
+            <button class="shot" type="button" data-lightbox="assets/apps/fork-it/screenshots/02-result.png" data-caption="Your restaurant pick">
+              <img src="assets/apps/fork-it/screenshots/02-result.png" alt="Fork It — restaurant pick" loading="lazy">
+            </button>
+            <button class="shot" type="button" data-lightbox="assets/apps/fork-it/screenshots/03-result-details.png" data-caption="Ratings, directions, delivery">
+              <img src="assets/apps/fork-it/screenshots/03-result-details.png" alt="Fork It — ratings and directions" loading="lazy">
+            </button>
+            <button class="shot" type="button" data-lightbox="assets/apps/fork-it/screenshots/04-history.png" data-caption="Fork history">
+              <img src="assets/apps/fork-it/screenshots/04-history.png" alt="Fork It — history" loading="lazy">
+            </button>
+            <button class="shot" type="button" data-lightbox="assets/apps/fork-it/screenshots/05-history-details.png" data-caption="Past picks">
+              <img src="assets/apps/fork-it/screenshots/05-history-details.png" alt="Fork It — past picks" loading="lazy">
+            </button>
+          </div>
+          <button class="carousel-btn next" type="button" aria-label="Next screenshot">&#8594;</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- SensorFit -->
+    <article class="showcase" id="sensorfit" data-accent="sensor">
+      <div class="showcase-inner">
+        <header class="showcase-header">
+          <img class="showcase-icon" src="assets/apps/sensorfit/icon/icon.png" alt="SensorFit icon" width="96" height="96">
+          <div>
+            <span class="showcase-category">Fitness</span>
+            <h2>SensorFit</h2>
+            <p class="showcase-tagline">Hands-free. Auto-counted.</p>
+          </div>
+        </header>
+        <p class="showcase-desc">
+          Turn your phone into a hands-free workout counter. Place your device, start a set, and SensorFit uses proximity
+          and accelerometer sensors to count push-ups, squats, sit-ups, and more — no tapping mid-set, no smartwatch required.
+        </p>
+        <div class="store-row">
+          <a class="store-badge play" href="https://play.google.com/store/apps/details?id=com.sensorfit.pushupcounter" target="_blank" rel="noopener noreferrer">
+            <img src="assets/badges/google-play.png" alt="Get it on Google Play">
+          </a>
+        </div>
+        <div class="video-row">
+          <button class="video-card is-short" type="button" data-yt="98tIPhCbos0" data-title="Hands-Free Push-Up Counter - SensorFit Auto Counts Every Rep">
+            <img src="https://i.ytimg.com/vi/98tIPhCbos0/hqdefault.jpg" alt="SensorFit hands-free counter short">
+            <span class="play-icon" aria-hidden="true"></span>
+            <span class="video-label">Auto-count every rep</span>
+          </button>
+          <button class="video-card is-short" type="button" data-yt="d1XoT1wAHA0" data-title="Stop Counting Reps in Your Head - Use This App">
+            <img src="https://i.ytimg.com/vi/d1XoT1wAHA0/hqdefault.jpg" alt="SensorFit stop counting in your head short">
+            <span class="play-icon" aria-hidden="true"></span>
+            <span class="video-label">Stop counting in your head</span>
+          </button>
+        </div>
+        <div class="carousel" data-carousel>
+          <button class="carousel-btn prev" type="button" aria-label="Previous screenshot">&#8592;</button>
+          <div class="carousel-track" tabindex="0">
+            <button class="shot" type="button" data-lightbox="assets/apps/sensorfit/screenshots/01-home.png" data-caption="Automatically count every rep">
+              <img src="assets/apps/sensorfit/screenshots/01-home.png" alt="SensorFit — home and start" loading="lazy">
+            </button>
+            <button class="shot" type="button" data-lightbox="assets/apps/sensorfit/screenshots/02-goals.png" data-caption="Set your goals">
+              <img src="assets/apps/sensorfit/screenshots/02-goals.png" alt="SensorFit — goals" loading="lazy">
+            </button>
+            <button class="shot" type="button" data-lightbox="assets/apps/sensorfit/screenshots/03-stats.png" data-caption="Stats and consistency">
+              <img src="assets/apps/sensorfit/screenshots/03-stats.png" alt="SensorFit — stats" loading="lazy">
+            </button>
+            <button class="shot" type="button" data-lightbox="assets/apps/sensorfit/screenshots/04-log.png" data-caption="Workout log">
+              <img src="assets/apps/sensorfit/screenshots/04-log.png" alt="SensorFit — workout log" loading="lazy">
+            </button>
+          </div>
+          <button class="carousel-btn next" type="button" aria-label="Next screenshot">&#8594;</button>
+        </div>
+      </div>
+    </article>
+
+    <!-- Spectrum Sync -->
+    <article class="showcase" id="spectrum-sync" data-accent="spectrum">
+      <div class="showcase-inner">
+        <header class="showcase-header">
+          <img class="showcase-icon" src="assets/apps/spectrum-sync/icon/icon.png" alt="Spectrum Sync icon" width="96" height="96">
+          <div>
+            <span class="showcase-category">Sensory</span>
+            <h2>Spectrum Sync</h2>
+            <p class="showcase-tagline">Your social language coach.</p>
+          </div>
+        </header>
+        <p class="showcase-desc">
+          An AI tone coach that helps you write with confidence in texts, chat, social media, and email.
+          Real-time feedback catches blunt or intense phrasing before you hit send — with smart rewrites and privacy-first setup.
+          Built especially for autistic and neurodivergent users, and anyone who overthinks the Send button.
+        </p>
+        <div class="video-row">
+          <button class="video-card is-wide" type="button" data-yt="4mF4EGYeODc" data-title="Spectrum Sync - Real-Time Communication &amp; Phrasing Coach">
+            <img src="https://i.ytimg.com/vi/4mF4EGYeODc/hqdefault.jpg" alt="Spectrum Sync official video thumbnail">
+            <span class="play-icon" aria-hidden="true"></span>
+            <span class="video-label">Real-time phrasing coach</span>
+          </button>
+          <button class="video-card is-short" type="button" data-yt="TEbyXl758qk" data-title="Social anxiety over texting? Let's fix that. | Spectrum Sync">
+            <img src="https://i.ytimg.com/vi/TEbyXl758qk/hqdefault.jpg" alt="Spectrum Sync texting short thumbnail">
+            <span class="play-icon" aria-hidden="true"></span>
+            <span class="video-label">Fix texting anxiety</span>
+          </button>
+        </div>
+
+        <div class="platform-split">
+          <section class="platform-block" aria-labelledby="spectrum-android">
+            <h3 id="spectrum-android">Android — live now</h3>
+            <p>
+              A background coach that watches what you type in the apps you already use — social media, chat, SMS, and email —
+              and flags tone before you hit send. Keep your current keyboard.
+            </p>
+            <div class="store-row">
+              <a class="store-badge play" href="https://play.google.com/store/apps/details?id=com.spectrumsync.keyboard" target="_blank" rel="noopener noreferrer">
+                <img src="assets/badges/google-play.png" alt="Get it on Google Play">
+              </a>
+            </div>
+            <div class="carousel" data-carousel>
+              <button class="carousel-btn prev" type="button" aria-label="Previous Android screenshot">&#8592;</button>
+              <div class="carousel-track" tabindex="0">
+                <button class="shot" type="button" data-lightbox="assets/apps/spectrum-sync/screenshots/play-screenshot-hype-1.png" data-caption="Know before you send">
+                  <img src="assets/apps/spectrum-sync/screenshots/play-screenshot-hype-1.png" alt="Spectrum Sync Android — know before you send" loading="lazy">
+                </button>
+                <button class="shot" type="button" data-lightbox="assets/apps/spectrum-sync/screenshots/play-screenshot-hype-2.png" data-caption="Catch tone while you type">
+                  <img src="assets/apps/spectrum-sync/screenshots/play-screenshot-hype-2.png" alt="Spectrum Sync Android — catch tone while you type" loading="lazy">
+                </button>
+                <button class="shot" type="button" data-lightbox="assets/apps/spectrum-sync/screenshots/play-screenshot-hype-3.png" data-caption="Privacy-first setup">
+                  <img src="assets/apps/spectrum-sync/screenshots/play-screenshot-hype-3.png" alt="Spectrum Sync Android — privacy-first setup" loading="lazy">
+                </button>
+                <button class="shot" type="button" data-lightbox="assets/apps/spectrum-sync/screenshots/play-screenshot-hype-4.png" data-caption="Customize your coach">
+                  <img src="assets/apps/spectrum-sync/screenshots/play-screenshot-hype-4.png" alt="Spectrum Sync Android — customize your coach" loading="lazy">
+                </button>
+              </div>
+              <button class="carousel-btn next" type="button" aria-label="Next Android screenshot">&#8594;</button>
+            </div>
+          </section>
+
+          <section class="platform-block" aria-labelledby="spectrum-ios">
+            <h3 id="spectrum-ios">iOS — coming soon as a keyboard</h3>
+            <p>
+              On iPhone, Spectrum Sync is a custom keyboard. Switch to it with the globe key in Messages, Mail, WhatsApp, and more.
+              Coaching appears as a pill above the keyboard with rewrite suggestions — same coach, different plumbing.
+            </p>
+            <div class="store-row">
+              <span class="soon-pill" aria-label="Coming soon on the App Store">Coming soon on the App Store</span>
+            </div>
+            <div class="carousel" data-carousel>
+              <button class="carousel-btn prev" type="button" aria-label="Previous iOS screenshot">&#8592;</button>
+              <div class="carousel-track" tabindex="0">
+                <button class="shot" type="button" data-lightbox="assets/apps/spectrum-sync/screenshots/ios/01-tone-pill.png" data-caption="Tone pill above the keyboard">
+                  <img src="assets/apps/spectrum-sync/screenshots/ios/01-tone-pill.png" alt="Spectrum Sync iOS — tone pill" loading="lazy">
+                </button>
+                <button class="shot" type="button" data-lightbox="assets/apps/spectrum-sync/screenshots/ios/02-rewrites.png" data-caption="Rewrite suggestions">
+                  <img src="assets/apps/spectrum-sync/screenshots/ios/02-rewrites.png" alt="Spectrum Sync iOS — rewrites" loading="lazy">
+                </button>
+                <button class="shot" type="button" data-lightbox="assets/apps/spectrum-sync/screenshots/ios/03-keyboard-ready.png" data-caption="Keyboard is ready">
+                  <img src="assets/apps/spectrum-sync/screenshots/ios/03-keyboard-ready.png" alt="Spectrum Sync iOS — keyboard ready" loading="lazy">
+                </button>
+                <button class="shot" type="button" data-lightbox="assets/apps/spectrum-sync/screenshots/ios/04-customize.png" data-caption="Customize your coach">
+                  <img src="assets/apps/spectrum-sync/screenshots/ios/04-customize.png" alt="Spectrum Sync iOS — customize" loading="lazy">
+                </button>
+                <button class="shot" type="button" data-lightbox="assets/apps/spectrum-sync/screenshots/ios/05-learning.png" data-caption="Learning">
+                  <img src="assets/apps/spectrum-sync/screenshots/ios/05-learning.png" alt="Spectrum Sync iOS — learning" loading="lazy">
+                </button>
+                <button class="shot" type="button" data-lightbox="assets/apps/spectrum-sync/screenshots/ios/06-premium.png" data-caption="Premium">
+                  <img src="assets/apps/spectrum-sync/screenshots/ios/06-premium.png" alt="Spectrum Sync iOS — premium" loading="lazy">
+                </button>
+              </div>
+              <button class="carousel-btn next" type="button" aria-label="Next iOS screenshot">&#8594;</button>
+            </div>
+          </section>
+        </div>
+      </div>
+    </article>
+
+    <!-- StimPad -->
+    <article class="showcase" id="stimpad" data-accent="stim">
+      <div class="showcase-inner">
+        <header class="showcase-header">
+          <img class="showcase-icon" src="assets/apps/stimpad/icon/icon.png" alt="StimPad icon" width="96" height="96">
+          <div>
+            <span class="showcase-category">Sensory</span>
+            <h2>StimPad</h2>
+            <p class="showcase-tagline">Audio sensory fidget. Feel every sound.</p>
+          </div>
+        </header>
+        <p class="showcase-desc">
+          A sensory sound tool for neurodivergent users — tap into calm, focus, and sensory joy with a library of stim sounds.
+          Save favorites, explore soothing audio textures, and unlock the full soundboard with StimPad Plus.
+        </p>
+        <div class="store-row">
+          <span class="soon-pill" aria-label="Coming soon on the App Store">Coming soon on the App Store</span>
+        </div>
+        <div class="carousel" data-carousel>
+          <button class="carousel-btn prev" type="button" aria-label="Previous screenshot">&#8592;</button>
+          <div class="carousel-track" tabindex="0">
+            <button class="shot" type="button" data-lightbox="assets/apps/stimpad/screenshots/promo-1.png" data-caption="Feel every sound">
+              <img src="assets/apps/stimpad/screenshots/promo-1.png" alt="StimPad — feel every sound" loading="lazy">
+            </button>
+            <button class="shot" type="button" data-lightbox="assets/apps/stimpad/screenshots/promo-2.png" data-caption="Instant calm">
+              <img src="assets/apps/stimpad/screenshots/promo-2.png" alt="StimPad — instant calm" loading="lazy">
+            </button>
+            <button class="shot" type="button" data-lightbox="assets/apps/stimpad/screenshots/promo-3.png" data-caption="Find your sound">
+              <img src="assets/apps/stimpad/screenshots/promo-3.png" alt="StimPad — find your sound" loading="lazy">
+            </button>
+            <button class="shot" type="button" data-lightbox="assets/apps/stimpad/screenshots/promo-4.png" data-caption="Save your favorites">
+              <img src="assets/apps/stimpad/screenshots/promo-4.png" alt="StimPad — save your favorites" loading="lazy">
+            </button>
+            <button class="shot" type="button" data-lightbox="assets/apps/stimpad/screenshots/promo-5.png" data-caption="Made to feel good">
+              <img src="assets/apps/stimpad/screenshots/promo-5.png" alt="StimPad — made to feel good" loading="lazy">
+            </button>
+            <button class="shot" type="button" data-lightbox="assets/apps/stimpad/screenshots/promo-6.png" data-caption="Unlock everything">
+              <img src="assets/apps/stimpad/screenshots/promo-6.png" alt="StimPad — unlock everything" loading="lazy">
+            </button>
+          </div>
+          <button class="carousel-btn next" type="button" aria-label="Next screenshot">&#8594;</button>
+        </div>
+      </div>
+    </article>
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="footer-inner glass">
+      <p class="footer-name">OrehRuoy</p>
+      <a class="footer-email" href="mailto:hallanhype@gmail.com">hallanhype@gmail.com</a>
+      <a class="footer-yt" href="https://www.youtube.com/@hallanhype1" target="_blank" rel="noopener noreferrer">YouTube — @hallanhype1</a>
+      <p class="footer-copy">&copy; 2026 Brock Hall. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <div class="lightbox" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-label="Screenshot preview">
+    <button class="lightbox-close" type="button" aria-label="Close preview">&times;</button>
+    <figure>
+      <img class="lightbox-img" src="" alt="">
+      <figcaption class="lightbox-caption"></figcaption>
+    </figure>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
