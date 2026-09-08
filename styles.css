@@ -99,6 +99,8 @@ button {
 .nav-links {
   display: flex;
   gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 
 .nav-links a {
@@ -107,7 +109,8 @@ button {
   transition: color 0.2s;
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links a[aria-current="page"] {
   color: var(--text);
 }
 
@@ -236,7 +239,8 @@ button {
 }
 
 /* Apps intro */
-.apps-intro {
+.apps-intro,
+.guides-intro {
   position: relative;
   z-index: 1;
   max-width: 1120px;
@@ -649,6 +653,92 @@ button {
   color: var(--text-muted);
 }
 
+/* Guides */
+.guide {
+  padding-top: 2rem;
+}
+
+.guide-kicker {
+  margin-bottom: 0.65rem;
+}
+
+.guide h1 {
+  margin: 0 0 1rem;
+  font-family: var(--font-serif);
+  font-size: clamp(2.25rem, 6vw, 3.5rem);
+  font-weight: 400;
+  line-height: 1.05;
+  letter-spacing: -0.02em;
+}
+
+.guide-lede {
+  max-width: 62ch;
+  margin: 0 0 1.75rem;
+  color: var(--text-muted);
+  font-size: 1.05rem;
+}
+
+.guide-prose {
+  max-width: 62ch;
+  margin: 0 0 2rem;
+}
+
+.guide-prose h2 {
+  margin: 1.75rem 0 0.45rem;
+  font-family: var(--font-serif);
+  font-size: 1.65rem;
+  font-weight: 400;
+}
+
+.guide-prose h2:first-child {
+  margin-top: 0;
+}
+
+.guide-prose p,
+.guide-prose li {
+  color: var(--text-muted);
+}
+
+.guide-prose p {
+  margin: 0 0 1rem;
+}
+
+.guide-prose strong {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.guide-prose ul {
+  margin: 0 0 1rem;
+  padding-left: 1.2rem;
+}
+
+.guide-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin: 0 0 1.75rem;
+}
+
+.guide-more {
+  margin-top: 2.5rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.guide-more .section-head {
+  margin-bottom: 1rem;
+}
+
+.guide-more .section-head h2 {
+  font-size: 1.75rem;
+}
+
+.guides-intro .app-grid,
+.guide-more .app-grid {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 /* Footer */
 .site-footer {
   position: relative;
@@ -764,6 +854,11 @@ button {
   }
 
   .app-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .guides-intro .app-grid,
+  .guide-more .app-grid {
     grid-template-columns: 1fr;
   }
 

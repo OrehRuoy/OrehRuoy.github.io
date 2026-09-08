@@ -5,7 +5,7 @@
 
   /* ── Filter chips ── */
   const chips = document.querySelectorAll('.filter-chip');
-  const cards = document.querySelectorAll('.app-card');
+  const cards = document.querySelectorAll('.apps-intro .app-card');
 
   chips.forEach((chip) => {
     chip.addEventListener('click', () => {
@@ -26,7 +26,7 @@
 
   /* ── Magnetic hover on app cards ── */
   if (!prefersReducedMotion) {
-    cards.forEach((card) => {
+    document.querySelectorAll('.app-card').forEach((card) => {
       card.addEventListener('pointermove', (e) => {
         const rect = card.getBoundingClientRect();
         const x = e.clientX - rect.left - rect.width / 2;
