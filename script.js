@@ -84,10 +84,10 @@
     lastFocus?.focus();
   }
 
-  document.querySelectorAll('.shot[data-lightbox]').forEach((btn) => {
-    btn.addEventListener('click', () => {
-      openLightbox(btn.dataset.lightbox, btn.dataset.caption);
-    });
+  document.addEventListener('click', (e) => {
+    const btn = e.target.closest('.shot[data-lightbox]');
+    if (!btn) return;
+    openLightbox(btn.dataset.lightbox, btn.dataset.caption);
   });
 
   lightboxClose?.addEventListener('click', closeLightbox);
@@ -130,6 +130,80 @@
       const headerH = document.querySelector('.site-header')?.offsetHeight || 0;
       const top = target.getBoundingClientRect().top + window.scrollY - headerH - 12;
       window.scrollTo({ top, behavior: prefersReducedMotion ? 'auto' : 'smooth' });
+    });
+  });
+
+  /* ── Live App Store screenshots ── */
+  function itunesHiRes(url) {
+    return String(url).replace(/\/\d+x\d+bb\.(jpg|png|webp)/i, '/1242x2688bb.$1');
+  }
+
+  function captionFromStoreUrl(url) {
+    const parts = String(url).split('/');
+    const file = decodeURIComponent(parts[parts.length - 2] || '');
+    return file.replace(/\.(png|jpg|jpeg|webp)$/i, '').replace(/^\d+-/, '').replace(/-/g, ' ');
+  }
+
+  function fillStoreCarousel(carousel, urls) {
+    const track = carousel.querySelector('.carousel-track');
+    if (!track || !urls.length) return;
+    track.innerHTML = '';
+    urls.forEach((url) => {
+      const caption = captionFromStoreUrl(url);
+      const btn = document.createElement('button');
+      btn.className = 'shot';
+      btn.type = 'button';
+      btn.dataset.lightbox = url;
+      btn.dataset.caption = caption;
+      const img = document.createElement('img');
+      img.src = url;
+      img.alt = 'Taptico — ' + caption;
+      img.loading = 'lazy';
+      btn.appendChild(img);
+      track.appendChild(btn);
+    });
+  }
+
+  function loadItunesApp(appId) {
+    return new Promise((resolve, reject) => {
+      const cb = 'orehItunesCb' + appId;
+      const script = document.createElement('script');
+      const timer = setTimeout(() => {
+        cleanup();
+        reject(new Error('timeout'));
+      }, 8000);
+
+      function cleanup() {
+        clearTimeout(timer);
+        try { delete window[cb]; } catch (err) { window[cb] = undefined; }
+        if (script.parentNode) script.parentNode.removeChild(script);
+      }
+
+      window[cb] = (data) => {
+        cleanup();
+        const app = data && data.results && data.results[0];
+        if (!app) reject(new Error('no result'));
+        else resolve(app);
+      };
+
+      script.src = 'https://itunes.apple.com/lookup?id=' + encodeURIComponent(appId) + '&callback=' + cb;
+      script.onerror = () => {
+        cleanup();
+        reject(new Error('script'));
+      };
+      document.head.appendChild(script);
+    });
+  }
+
+  document.querySelectorAll('[data-store-screenshots]').forEach((carousel) => {
+    const spec = carousel.getAttribute('data-store-screenshots') || '';
+    const match = spec.match(/^itunes:(\d+)$/);
+    if (!match) return;
+    loadItunesApp(match[1]).then((app) => {
+      const urls = (app.screenshotUrls || []).map(itunesHiRes);
+      if (urls.length) fillStoreCarousel(carousel, urls);
+    }).catch(() => {
+      /* Keep the local App Store copies already in the page. */
     });
   });
 })();
