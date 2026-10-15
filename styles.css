@@ -775,6 +775,38 @@ button {
   text-decoration: underline;
 }
 
+.social-row {
+  display: flex;
+  justify-content: center;
+  gap: 0.65rem;
+  margin: 0.15rem 0 0.9rem;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--glass-border);
+  color: var(--text-muted);
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+}
+
+.social-link:hover {
+  color: var(--text);
+  border-color: rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.social-link svg {
+  display: block;
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
 .footer-yt {
   display: block;
   margin-bottom: 0.75rem;
