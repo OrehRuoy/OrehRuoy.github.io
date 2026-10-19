@@ -742,6 +742,48 @@ button {
   grid-template-columns: repeat(2, 1fr);
 }
 
+/* Newsletter */
+.newsletter {
+  position: relative;
+  z-index: 1;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 1.25rem 3rem;
+}
+
+.newsletter-card {
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.newsletter-banner {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.newsletter-body {
+  padding: 1.35rem 1.5rem 1.6rem;
+}
+
+.newsletter-blurb {
+  max-width: 62ch;
+  margin: 0 0 1.25rem;
+  color: var(--text-muted);
+}
+
+.newsletter-feature {
+  margin: 1rem 0 0;
+}
+
+.newsletter-feature a {
+  color: var(--brass);
+}
+
+.newsletter-feature a:hover {
+  text-decoration: underline;
+}
+
 /* Footer */
 .site-footer {
   position: relative;
