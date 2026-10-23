@@ -23,6 +23,7 @@
   --stim: #f472b6;
   --taptico: #2dd4bf;
   --oildue: #ff453a;
+  --clickety: #e07a5f;
 
   --radius: 18px;
   --shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
@@ -363,6 +364,7 @@ button {
 .app-card[data-accent="stim"]:hover { border-color: rgba(244, 114, 182, 0.35); }
 .app-card[data-accent="taptico"]:hover { border-color: rgba(45, 212, 191, 0.35); }
 .app-card[data-accent="oildue"]:hover { border-color: rgba(255, 69, 58, 0.4); }
+.app-card[data-accent="clickety"]:hover { border-color: rgba(224, 122, 95, 0.45); }
 
 /* Showcases */
 .showcase {
@@ -388,6 +390,7 @@ button {
 .showcase[data-accent="stim"]::before { background: radial-gradient(circle at 20% 30%, var(--stim), transparent 55%); }
 .showcase[data-accent="taptico"]::before { background: radial-gradient(circle at 20% 30%, var(--taptico), transparent 55%); }
 .showcase[data-accent="oildue"]::before { background: radial-gradient(circle at 20% 30%, var(--oildue), transparent 55%); }
+.showcase[data-accent="clickety"]::before { background: radial-gradient(circle at 20% 30%, var(--clickety), transparent 55%); }
 
 .showcase-inner {
   position: relative;
