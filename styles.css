@@ -858,6 +858,26 @@ button {
   color: var(--text-muted);
 }
 
+.footer-link {
+  color: var(--brass);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.footer-link:hover {
+  color: var(--text);
+}
+
+.guide-prose a.text-link {
+  color: var(--brass);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.guide-prose a.text-link:hover {
+  color: var(--text);
+}
+
 .footer-copy {
   margin: 0;
   font-size: 0.85rem;
