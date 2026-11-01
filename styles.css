@@ -776,9 +776,48 @@ button {
 }
 
 .recipe-shot .shot img {
-  aspect-ratio: 1206 / 2622;
+  aspect-ratio: 1000 / 1360;
   object-fit: cover;
-  background: #c45c12;
+  object-position: center;
+  background: #1c140f;
+}
+
+.dish-carousel .shot {
+  width: min(280px, 68vw);
+}
+
+.dish-carousel .shot img {
+  aspect-ratio: 1000 / 1360;
+  object-fit: cover;
+  object-position: center;
+  background: #1c140f;
+}
+
+.app-card-icon.dish {
+  object-fit: cover;
+  object-position: center 38%;
+}
+
+.recipe-week {
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+}
+
+.recipe-week a {
+  display: block;
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid var(--glass-border);
+}
+
+.recipe-week img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 10;
+  object-fit: cover;
+  object-position: center 40%;
 }
 
 .recipe-shot figcaption {
@@ -1122,7 +1161,16 @@ button {
 
   .recipe-shot {
     position: static;
-    max-width: 280px;
+    max-width: 420px;
+  }
+
+  .recipe-shot.recipe-week {
+    max-width: none;
+  }
+
+  .recipe-week {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
   }
 }
 
