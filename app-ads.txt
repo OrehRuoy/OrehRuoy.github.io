@@ -1,4 +1,4 @@
-ownerdomain=orehruoy.github.io
+ownerdomain=orehruoy.com
 #Google
 google.com, pub-5356882403986713, DIRECT, f08c47fec0942fa0
 
