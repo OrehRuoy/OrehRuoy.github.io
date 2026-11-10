@@ -47,6 +47,7 @@
       <li><strong>Photos:</strong> when you take or choose a photo, it is sent to Google Gemini through our Firebase Cloud Functions so that SewLens can choose a matching sewing design. Photos are used only for that purpose and are not stored by us.</li>
       <li><strong>Body measurements:</strong> the measurements you enter, along with your chosen design, options, units, and paper size, are sent through our Firebase Cloud Functions to draft your pattern.</li>
       <li><strong>Analytics:</strong> Firebase Analytics (Google Analytics for Firebase) records how the app is used, such as which steps are completed and when a pattern is drafted, so we can understand usage and improve the app.</li>
+      <li><strong>Fit feedback:</strong> if you choose to send fit feedback in the app, it is stored in Google Cloud Firestore (Firebase). It is not linked to your identity and is used only to improve how well patterns fit.</li>
       <li><strong>Crash data:</strong> Firebase Crashlytics records crash reports and related technical information about your device and the app, so we can find and fix problems.</li>
       <li><strong>Purchases:</strong> in-app purchases are processed by Apple (App Store) and Google (Google Play). We receive a purchase confirmation so the app can unlock what you bought. We do not see or receive your payment card details.</li>
       <li><strong>Support email:</strong> if you email us, we receive your email address and message so we can reply.</li>
@@ -55,7 +56,7 @@
     <h2>Third-party services</h2>
     <ul>
       <li>Google Gemini (Google AI) — design suggestion from your photo — <a href="https://policies.google.com/privacy">Google Privacy Policy</a></li>
-      <li>Firebase Cloud Functions, Firebase Analytics, and Firebase Crashlytics — <a href="https://firebase.google.com/support/privacy">Firebase Privacy</a></li>
+      <li>Firebase Cloud Functions, Cloud Firestore (fit feedback), Firebase Analytics, and Firebase Crashlytics — <a href="https://firebase.google.com/support/privacy">Firebase Privacy</a></li>
       <li>Apple App Store — purchase processing on iPhone and iPad</li>
       <li>Google Play and Google Play Billing — purchase processing on Android</li>
     </ul>
@@ -72,6 +73,7 @@
     <p>
       Photos are not stored by us after they are used to choose a design.
       Data kept on your device remains until you delete the app or clear its data.
+      Fit feedback you choose to send is stored in Cloud Firestore and is not linked to your identity.
       Google (including Firebase), Apple, and Google Play keep data according to their own retention policies.
       We keep support emails only as long as needed to help you.
     </p>
