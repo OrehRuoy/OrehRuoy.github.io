@@ -1,53 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SewLens: Sewing Pattern Maker</title>
-  <meta name="description" content="SewLens drafts made-to-measure sewing patterns from your body measurements and a photo of a garment style you like." />
-  <link rel="canonical" href="https://orehruoy.com/SewLens/" />
-  <style>
-    body { font-family: system-ui, sans-serif; max-width: 720px; margin: 2rem auto; padding: 0 1rem; line-height: 1.6; color: #1a1a1a; }
-    h1 { font-size: 1.75rem; }
-    h2 { font-size: 1.15rem; margin-top: 1.5rem; }
-    h3 { font-size: 1rem; margin-top: 1.25rem; margin-bottom: 0.25rem; }
-    a { color: #0d7a84; }
-    a:focus-visible { outline: 2px solid #0d7a84; outline-offset: 2px; }
-    nav ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem 1.25rem; }
-    .note { border: 1px solid #cfe3e5; border-radius: 10px; padding: 0.9rem 1rem; background: #f3fafa; }
-    pre { white-space: pre-wrap; font-size: 0.85rem; background: #f6f6f6; padding: 0.9rem 1rem; border-radius: 8px; }
-    footer { margin-top: 2.5rem; font-size: 0.9rem; color: #555; }
-  </style>
+  <meta name="description" content="SewLens drafts made-to-measure PDF sewing patterns from your measurements and a photo of a garment you like. Free on the App Store. Android coming soon.">
+  <link rel="canonical" href="https://orehruoy.com/SewLens/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
-  <nav aria-label="SewLens pages">
-    <ul>
-      <li><a href="./">SewLens</a></li>
-      <li><a href="privacy.html">Privacy</a></li>
-      <li><a href="support.html">Support</a></li>
-      <li><a href="terms.html">Terms</a></li>
-    </ul>
-  </nav>
+  <header class="site-header" id="top">
+    <nav class="nav glass" aria-label="Main">
+      <a class="nav-logo" href="../index.html">OrehRuoy</a>
+      <div class="nav-links">
+        <a href="../index.html#apps">Apps</a>
+        <a href="../index.html#guides">Guides</a>
+        <a href="../educators.html">Educators</a>
+        <a href="../schools.html">Schools</a>
+        <a href="https://www.youtube.com/@hallanhype1" target="_blank" rel="noopener noreferrer">YouTube</a>
+        <a href="../index.html#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
   <main>
-    <h1>SewLens: Sewing Pattern Maker</h1>
-    <p>SewLens helps home sewists get a sewing pattern drafted to their own measurements.</p>
-    <p>You enter your body measurements and take or choose a photo of a garment style you like. SewLens suggests a matching sewing design, then drafts a pattern from your measurements that you can print on Letter or A4 paper at home.</p>
-    <p>No account is needed and there are no ads. Patterns are made-to-measure estimates, so a test garment (muslin) is always a good idea before cutting your good fabric.</p>
-    <p>The patterns are built on <a href="https://freesewing.org/">FreeSewing</a>, an open-source pattern project released under the MIT License.</p>
+    <article class="showcase guide" data-accent="sewlens">
+      <div class="showcase-inner">
+        <header class="showcase-header">
+          <img class="showcase-icon" src="../assets/apps/sewlens/icon/icon.png" alt="SewLens app icon" width="96" height="96">
+          <div>
+            <span class="showcase-category">Craft</span>
+            <h1>SewLens: Sewing Pattern Maker</h1>
+            <p class="showcase-tagline">Made-to-measure PDF drafting.</p>
+          </div>
+        </header>
 
-    <h2>Availability</h2>
-    <p>SewLens is coming soon to the App Store and Google Play.</p>
+        <div class="guide-prose">
+          <p>SewLens helps home sewists get a sewing pattern drafted to their own measurements. You enter your body measurements and take or choose a photo of a garment style you like. SewLens suggests a matching sewing design, then drafts a pattern from your measurements that you can print on Letter or A4 paper at home.</p>
+          <p>Photos are only used to find a design and are not stored. Measurements stay on the phone. No account is needed and there are no ads.</p>
+          <p>Patterns are made-to-measure estimates, so a test garment (muslin) is a good idea before cutting your good fabric.</p>
+          <p>The patterns are built on <a class="text-link" href="https://freesewing.org/">FreeSewing</a>, an open-source pattern project released under the MIT License.</p>
+          <p>The first pattern is free. After that, buy pattern credits or unlock SewLens Unlimited, a one-time purchase. No subscription. Restore Purchases is in the app.</p>
+          <p>Available in English, German, French, Spanish, Brazilian Portuguese, Japanese, Italian, and Dutch. Requires iOS 15 or later.</p>
+        </div>
 
-    <h2>More information</h2>
-    <ul>
-      <li><a href="privacy.html">Privacy Policy</a></li>
-      <li><a href="support.html">Support and FAQ</a></li>
-      <li><a href="terms.html">Terms of Use</a></li>
-    </ul>
+        <div class="store-row">
+          <a class="store-badge apple" href="https://apps.apple.com/us/app/sewlens-sewing-pattern-maker/id6830324321" target="_blank" rel="noopener noreferrer">
+            <img src="../assets/badges/app-store.svg" alt="Download on the App Store" width="120" height="40">
+          </a>
+          <span class="soon-pill">Coming soon on Android</span>
+          <a class="footer-link" href="privacy.html">Privacy</a>
+          <a class="footer-link" href="support.html">Support</a>
+          <a class="footer-link" href="terms.html">Terms</a>
+          <a class="footer-link" href="mailto:hallanhype@gmail.com">hallanhype@gmail.com</a>
+        </div>
+
+        <div class="carousel" data-carousel>
+          <button class="carousel-btn prev" type="button" aria-label="Previous screenshot">&#8592;</button>
+          <div class="carousel-track" tabindex="0">
+            <button class="shot" type="button" data-lightbox="../assets/apps/sewlens/screenshots/01-garment-photo.jpg" data-caption="Start with a garment photo">
+              <img src="../assets/apps/sewlens/screenshots/01-garment-photo.jpg" alt="SewLens home screen: make a pattern from a garment photo" width="1287" height="2796" loading="lazy">
+            </button>
+            <button class="shot" type="button" data-lightbox="../assets/apps/sewlens/screenshots/02-pick-design.jpg" data-caption="Pick the matching design">
+              <img src="../assets/apps/sewlens/screenshots/02-pick-design.jpg" alt="SewLens design list, with Aaron A-Shirt selected" width="1287" height="2796" loading="lazy">
+            </button>
+            <button class="shot" type="button" data-lightbox="../assets/apps/sewlens/screenshots/03-measure.jpg" data-caption="Measure once">
+              <img src="../assets/apps/sewlens/screenshots/03-measure.jpg" alt="SewLens measurement step for chest circumference" width="1287" height="2796" loading="lazy">
+            </button>
+            <button class="shot" type="button" data-lightbox="../assets/apps/sewlens/screenshots/04-pattern-preview.jpg" data-caption="Preview the pattern">
+              <img src="../assets/apps/sewlens/screenshots/04-pattern-preview.jpg" alt="SewLens pattern preview for an Aaron A-Shirt, with pieces and fabric needed" width="1287" height="2796" loading="lazy">
+            </button>
+            <button class="shot" type="button" data-lightbox="../assets/apps/sewlens/screenshots/05-pattern-details.jpg" data-caption="Paper and fabric">
+              <img src="../assets/apps/sewlens/screenshots/05-pattern-details.jpg" alt="SewLens pattern details: paper size, fabric, and next steps" width="1287" height="2796" loading="lazy">
+            </button>
+            <button class="shot" type="button" data-lightbox="../assets/apps/sewlens/screenshots/06-settings.jpg" data-caption="Units, paper, and credits">
+              <img src="../assets/apps/sewlens/screenshots/06-settings.jpg" alt="SewLens settings for language, units, paper size, and pattern credits" width="1287" height="2796" loading="lazy">
+            </button>
+          </div>
+          <button class="carousel-btn next" type="button" aria-label="Next screenshot">&#8594;</button>
+        </div>
+      </div>
+    </article>
   </main>
-  <footer>
-    <p>SewLens is published by Brock Hall (OrehRuoy) · <a href="mailto:hallanhype@gmail.com">hallanhype@gmail.com</a> · <a href="https://orehruoy.com/">orehruoy.com</a></p>
+
+  <footer class="site-footer" id="contact">
+    <div class="footer-inner glass">
+      <p class="footer-name">OrehRuoy</p>
+      <a class="footer-email" href="mailto:hallanhype@gmail.com">hallanhype@gmail.com</a>
+      <a class="footer-yt footer-link" href="privacy.html">SewLens privacy</a>
+      <a class="footer-yt footer-link" href="support.html">Support</a>
+      <a class="footer-yt footer-link" href="terms.html">Terms</a>
+      <a class="footer-yt footer-link" href="/privacy.html">All privacy policies</a>
+      <p class="footer-copy">SewLens is published by Brock Hall (OrehRuoy).</p>
+      <p class="footer-copy">&copy; 2026 Brock Hall. All rights reserved.</p>
+    </div>
   </footer>
+
+  <div class="lightbox" hidden aria-hidden="true" role="dialog" aria-modal="true" aria-label="Screenshot preview">
+    <button class="lightbox-close" type="button" aria-label="Close preview">&times;</button>
+    <figure>
+      <img class="lightbox-img" src="" alt="">
+      <figcaption class="lightbox-caption"></figcaption>
+    </figure>
+  </div>
+
+  <script src="../script.js"></script>
   <script data-goatcounter="https://orehruoy.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>

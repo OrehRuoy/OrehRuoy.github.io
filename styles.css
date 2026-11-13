@@ -24,6 +24,7 @@
   --taptico: #2dd4bf;
   --oildue: #ff453a;
   --clickety: #e07a5f;
+  --sewlens: #e0b15a;
 
   --radius: 18px;
   --shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
@@ -365,6 +366,7 @@ button {
 .app-card[data-accent="taptico"]:hover { border-color: rgba(45, 212, 191, 0.35); }
 .app-card[data-accent="oildue"]:hover { border-color: rgba(255, 69, 58, 0.4); }
 .app-card[data-accent="clickety"]:hover { border-color: rgba(224, 122, 95, 0.45); }
+.app-card[data-accent="sewlens"]:hover { border-color: rgba(224, 177, 90, 0.45); }
 
 /* Showcases */
 .showcase {
@@ -391,6 +393,7 @@ button {
 .showcase[data-accent="taptico"]::before { background: radial-gradient(circle at 20% 30%, var(--taptico), transparent 55%); }
 .showcase[data-accent="oildue"]::before { background: radial-gradient(circle at 20% 30%, var(--oildue), transparent 55%); }
 .showcase[data-accent="clickety"]::before { background: radial-gradient(circle at 20% 30%, var(--clickety), transparent 55%); }
+.showcase[data-accent="sewlens"]::before { background: radial-gradient(circle at 20% 30%, var(--sewlens), transparent 55%); }
 
 .showcase-inner {
   position: relative;
@@ -677,6 +680,15 @@ button {
   letter-spacing: -0.02em;
 }
 
+.showcase-header h1 {
+  margin: 0;
+  font-family: var(--font-serif);
+  font-size: 2.25rem;
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: 0;
+}
+
 .guide-lede {
   max-width: 62ch;
   margin: 0 0 1.75rem;
@@ -943,48 +955,6 @@ button {
 .guides-intro .app-grid,
 .guide-more .app-grid {
   grid-template-columns: repeat(2, 1fr);
-}
-
-/* Newsletter */
-.newsletter {
-  position: relative;
-  z-index: 1;
-  max-width: 1120px;
-  margin: 0 auto;
-  padding: 0 1.25rem 3rem;
-}
-
-.newsletter-card {
-  border-radius: var(--radius);
-  overflow: hidden;
-}
-
-.newsletter-banner {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.newsletter-body {
-  padding: 1.35rem 1.5rem 1.6rem;
-}
-
-.newsletter-blurb {
-  max-width: 62ch;
-  margin: 0 0 1.25rem;
-  color: var(--text-muted);
-}
-
-.newsletter-feature {
-  margin: 1rem 0 0;
-}
-
-.newsletter-feature a {
-  color: var(--brass);
-}
-
-.newsletter-feature a:hover {
-  text-decoration: underline;
 }
 
 /* Footer */
